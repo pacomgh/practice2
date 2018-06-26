@@ -8,17 +8,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/inputEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/input_id"
-        android:inputType="number"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/input_id"
+        android:inputType="number" />
 
     <Button
         android:id="@+id/submit"
@@ -27,7 +28,12 @@
         android:text="@string/submit"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:onClick="submit_onClick"
+        />
 
     <TextView
         android:id="@+id/info"
